@@ -319,16 +319,6 @@ html {
 .blends .blends-info .blend .blend-card .blend-back {
 	transform: rotateY(180deg);
 }
-.blends .blends-info .blend .blend-card .blend-front i {
-	font-size: 4rem;
-	color: white;
-	margin-bottom: 10px;
-}
-.blends .blends-info .blend .blend-card .blend-front .blend-front-heading,
-.blends .blends-info .blend .blend-card .blend-back .blend-back-heading {
-    font-size: 3rem;
-	text-transform: capitalize;
-}
 .blends .blends-info .blend:hover .blend-card {
 	transform: rotateY(180deg);
 }
@@ -371,7 +361,7 @@ html {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.274);
+	background-color: white;
 	z-index: -1;
 }
 .blends .blends-info .blend:nth-child(2) .blend-card .blend-front i {
