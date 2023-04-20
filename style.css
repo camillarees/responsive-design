@@ -363,7 +363,7 @@ html {
 	position: relative;
 	color: white;
 }
-.blends .blends-info .blend:nth-child(2) .blend-card .blend-front::after {
+/* .blends .blends-info .blend:nth-child(2) .blend-card .blend-front::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -373,7 +373,7 @@ html {
     color: rgb(35, 35, 35);
 	background-color: white;
 	z-index: -1;
-}
+} */
 .blends .blends-info .blend:nth-child(2) .blend-card .blend-front i {
 	color: white;
 }
