@@ -8,10 +8,10 @@ hamburger_icon.addEventListener('click', () => {
 });
 
 function flipCard(card) {
-    var blendCard = card.parentNode; // Get the parent blend-card element
+    const blendCard = card.parentNode; // Get the parent blend-card element
     if (blendCard.classList.contains('flipped')) {
       blendCard.classList.remove('flipped'); // Remove 'flipped' class to flip back
-    } else {
-      blendCard.classList.add('flipped'); // Add 'flipped' class to flip
+    } else if (card.classList.contains('blend-back')) {
+        blendCard.classList.add('flipped'); // Add 'flipped' class to flip
+      }
     }
-  }

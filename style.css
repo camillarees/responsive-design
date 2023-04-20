@@ -256,7 +256,6 @@ html {
 	flex-direction: column;
 	min-height: 60vh;
     margin-top: 5rem;
-    perspective: 1000px;
 }
 .blends .blends-header {
 	width: 80%;
