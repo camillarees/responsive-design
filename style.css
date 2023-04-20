@@ -153,11 +153,13 @@ html {
 }
 .hero .hero-info {
 	width: 100%;
+    margin-left: 5rem;
+    margin-right: 5rem;
 	text-align: center;
 }
 .hero .hero-info .hero-info-heading {
 	font-size: 5rem;
-	font-weight: 500;
+	font-weight: 500; 
 	color: whitesmoke;
 }
 .hero .hero-info .hero-info-subheading {
@@ -317,16 +319,16 @@ html {
 }
 .services .services-info .service .service-card .service-front .service-front-heading,
 .services .services-info .service .service-card .service-back .service-back-heading {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	text-transform: capitalize;
 }
 .services .services-info .service:hover .service-card {
 	transform: rotateY(180deg);
 }
 .services .services-info .service .service-card .service-back .service-back-desc {
-	font-size: 1.3rem;
+	font-size: 1.7rem;
 	margin-top: 10px;
-	text-align: center;
+	text-align: left;
 }
 
 .services .services-info .service:nth-child(1) .service-card .service-front {
@@ -362,36 +364,6 @@ html {
 	color: white;
 }
 /* End Services section  */
-
-/* Hire Section  */
-.hire {
-	min-height: 10vh;
-	flex-direction: column;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.212);
-	padding: 3rem 2rem;
-}
-.hire .hire-heading {
-	color: black;
-	font-size: 2.2rem;
-	text-align: center;
-}
-.hire .hire-button {
-	padding: 2rem 3rem;
-	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.267);
-	font-size: 1.6rem;
-	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: .2rem;
-	margin-top: 10px;
-	color: whitesmoke;
-	transition: .3s ease background-color;
-}
-.hire .hire-button:hover {
-	background-color: black;
-}
-/* End Hire Section  */
 
 /* Footer section  */
 .footer {
