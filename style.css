@@ -327,6 +327,11 @@ html {
 .blends .blends-info .blend:hover .blend-card {
 	transform: rotateY(180deg);
 }
+
+.blends .blends-info .blend .blend-card.flip {
+    transform: rotateY(180deg);
+}
+
 .blends .blends-info .blend .blend-card .blend-back .blend-back-desc {
 	font-size: 2rem;
     line-height: 3.5rem;

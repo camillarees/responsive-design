@@ -6,3 +6,11 @@ hamburger_icon.addEventListener('click', () => {
 	nav_list.classList.toggle('open');
 	hamburger_icon.classList.toggle('active');
 });
+
+const blendCards = document.querySelectorAll('.blends .blends-info .blend .blend-card');
+
+blendCards.forEach(blendCard => {
+    blendCard.addEventListener('click', () => {
+        blendCard.classList.toggle('flip');
+    });
+});
