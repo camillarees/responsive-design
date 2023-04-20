@@ -258,8 +258,8 @@ html {
     margin-top: 5rem;
 }
 .blends .blends-header {
-	width: 100%;
-	text-align: center;
+	width: 80%;
+	text-align: left;
 }
 .blends .blends-header .blends-header-heading {
 	font-size: 4rem;
@@ -271,10 +271,9 @@ html {
 	font-size: 1.3rem;
     text-align: left;
 	line-height: 2rem;
-	margin-top: 20px;
-    margin-left: 5rem;
-    margin-right: 5rem;
+	margin-top: 10px;
 }
+
 .blends .blends-info {
 	margin-top: 30px;
 	display: flex;
@@ -447,9 +446,10 @@ html {
 		padding-right: 17rem;
 	}
 	.blends .blends-header .blends-header-desc {
-		max-width: 500px;
-		padding-top: 20px;
-		margin: 0 auto;
+		align-items: left;
+        max-width: 34%;
+        padding-top: 10px;
+		margin-right: 27rem;
 	}
 	.blends .blends-info {
 		flex-direction: row;
