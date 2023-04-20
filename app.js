@@ -7,10 +7,11 @@ hamburger_icon.addEventListener('click', () => {
 	hamburger_icon.classList.toggle('active');
 });
 
-const blendCards = document.querySelectorAll('.blends .blends-info .blend .blend-card');
-
-blendCards.forEach(blendCard => {
-    blendCard.addEventListener('click', () => {
-        blendCard.classList.toggle('flip');
-    });
-});
+function flipCard(card) {
+    var blendCard = card.parentNode; // Get the parent blend-card element
+    if (blendCard.classList.contains('flipped')) {
+      blendCard.classList.remove('flipped'); // Remove 'flipped' class to flip back
+    } else {
+      blendCard.classList.add('flipped'); // Add 'flipped' class to flip
+    }
+  }

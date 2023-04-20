@@ -256,6 +256,7 @@ html {
 	flex-direction: column;
 	min-height: 60vh;
     margin-top: 5rem;
+    perspective: 1000px;
 }
 .blends .blends-header {
 	width: 80%;
@@ -297,6 +298,11 @@ html {
 	transition: .3s ease transform;
 	display: block;
 }
+
+.blends .blends-info .blend .blend-card.flipped {
+    transform: rotateY(180deg);
+  }
+  
 .blends .blends-info .blend .blend-card .blend-front,
 .blends .blends-info .blend .blend-card .blend-back {
 	position: absolute;
@@ -452,7 +458,7 @@ html {
 	}
 	.blends .blends-header .blends-header-desc {
 		align-items: left;
-        max-width: 34%;
+        max-width: 35%;
         padding-top: 10px;
 		margin-right: 27rem;
 	}
