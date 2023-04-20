@@ -161,13 +161,13 @@ html {
 .hero .hero-info .hero-info-heading {
 	font-size: 5rem;
 	font-weight: 500; 
-	color: whitesmoke;
+	color: white;
 }
 .hero .hero-info .hero-info-subheading {
 	font-size: 1.6rem;
 	text-transform: uppercase;
 	letter-spacing: .5rem;
-	color: whitesmoke;
+	color: white;
 }
 .hero .hero-info .hero-info-button {
 	margin-top: 30px;
@@ -175,7 +175,7 @@ html {
 	display: inline-block;
 	font-size: 1.6rem;
 	text-transform: uppercase;
-	color: whitesmoke;
+	color: white;
 	text-decoration: none;
 	letter-spacing: .6rem;
 	background-color: #B2E079;
@@ -216,7 +216,7 @@ html {
 	padding: 1.6rem 2.6rem;
 	display: inline-block;
 	background-color: #B2E079;
-	color: whitesmoke;
+	color: white;
 	text-decoration: none;
 	font-size: 1.6rem;
 	text-transform: uppercase;
