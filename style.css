@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
 * {
 	padding: 0;
 	margin: 0;
@@ -17,7 +18,7 @@ html {
 	align-items: center;
 	justify-content: center;
 }
-/* Nav Bar  */
+/* nav bar open  */
 #nav-bar {
 	height: auto;
 	width: 100%;
@@ -99,7 +100,7 @@ html {
 	width: 100%;
 	top: 0;
 	left: 0;
-	background-color: rgb(46, 45, 45);
+	background-color: #FFA500;
 	padding: 5rem 0;
 	transform: translateY(-100%);
 	transition: .3s ease transform;
@@ -137,9 +138,9 @@ html {
 .nav-bar .nav-list.open ul {
 	transform: translateY(90px);
 }
-/* End Nav Bar */
+/* nav bar close */
 
-/* Hero Section */
+/* hero section open */
 .hero {
 	min-height: 80vh;
 	width: 100%;
@@ -174,37 +175,37 @@ html {
 	display: inline-block;
 	font-size: 1.6rem;
 	text-transform: uppercase;
-	color: white;
+	color: whitesmoke;
 	text-decoration: none;
 	letter-spacing: .6rem;
 	background-color: #B2E079;
 }
 .hero .hero-img {
 	height: auto;
-	width: 80%;
+	width: 100%;
 	margin-bottom: 3rem;
 }
 .hero .hero-img img {
 	height: 100%;
 	width: 100%;
 }
-/* End Hero Section */
+/* hero section close */
 
-/* About Section  */
+/* about open  */
 .about {
 	width: 100%;
 	min-height: 50vh;
-	padding: 10rem 5rem;
+	padding: 5rem 5rem;
 	flex-direction: column;
 }
 .about .about-info {
-	text-align: center;
+	text-align: left;
 }
 .about .about-info .about-info-heading {
 	font-size: 4rem;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
-	color: black;
+    color: rgb(35, 35, 35);
 }
 .about .about-info .about-info-desc {
 	font-size: 1.3rem;
@@ -224,11 +225,10 @@ html {
 	margin-bottom: 20px;
 }
 .about .about-img {
-	margin-top: 50px;
 	display: block;
 }
 .about .about-img .about-img-wrapper {
-	margin-top: 50px;
+	margin-top: 7rem;
 	height: auto;
 	max-width: 400px;
 	position: relative;
@@ -249,30 +249,33 @@ html {
 	background-color: rgba(34, 33, 33, 0.158);
 	z-index: -1;
 }
-/* End About Section  */
+/* about close  */
 
-/* Services section  */
-.services {
+/* products section open  */
+.blends {
 	flex-direction: column;
 	min-height: 60vh;
-	padding: 10rem 5rem;
+    margin-top: 5rem;
 }
-.services .services-header {
+.blends .blends-header {
 	width: 100%;
 	text-align: center;
 }
-.services .services-header .services-header-heading {
+.blends .blends-header .blends-header-heading {
 	font-size: 4rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	color: black;
+    color: rgb(35, 35, 35);
 }
-.services .services-header .services-header-desc {
+.blends .blends-header .blends-header-desc {
 	font-size: 1.3rem;
+    text-align: left;
 	line-height: 2rem;
 	margin-top: 20px;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
-.services .services-info {
+.blends .blends-info {
 	margin-top: 30px;
 	display: flex;
 	align-items: center;
@@ -280,14 +283,14 @@ html {
 	width: 100%;
 	flex-direction: column;
 }
-.services .services-info .service {
+.blends .blends-info .blend {
 	width: 100%;
-	min-height: 300px;
+	min-height: 450px;
 	position: relative;
 	transition: .3s ease transform;
 	margin: 5px;
 }
-.services .services-info .service .service-card {
+.blends .blends-info .blend .blend-card {
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -295,8 +298,8 @@ html {
 	transition: .3s ease transform;
 	display: block;
 }
-.services .services-info .service .service-card .service-front,
-.services .services-info .service .service-card .service-back {
+.blends .blends-info .blend .blend-card .blend-front,
+.blends .blends-info .blend .blend-card .blend-back {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -309,48 +312,50 @@ html {
 	justify-content: center;
 	padding: 10px;
 }
-.services .services-info .service .service-card .service-back {
+.blends .blends-info .blend .blend-card .blend-back {
 	transform: rotateY(180deg);
 }
-.services .services-info .service .service-card .service-front i {
+.blends .blends-info .blend .blend-card .blend-front i {
 	font-size: 4rem;
-	color: black;
+	color: rgb(35, 35, 35);
 	margin-bottom: 10px;
 }
-.services .services-info .service .service-card .service-front .service-front-heading,
-.services .services-info .service .service-card .service-back .service-back-heading {
-	font-size: 2rem;
+.blends .blends-info .blend .blend-card .blend-front .blend-front-heading,
+.blends .blends-info .blend .blend-card .blend-back .blend-back-heading {
+    font-size: 3rem;
 	text-transform: capitalize;
 }
-.services .services-info .service:hover .service-card {
+.blends .blends-info .blend:hover .blend-card {
 	transform: rotateY(180deg);
 }
-.services .services-info .service .service-card .service-back .service-back-desc {
-	font-size: 1.7rem;
+.blends .blends-info .blend .blend-card .blend-back .blend-back-desc {
+	font-size: 2rem;
+    line-height: 3.5rem;
 	margin-top: 10px;
 	text-align: left;
+    list-style-type: none;
 }
 
-.services .services-info .service:nth-child(1) .service-card .service-front {
+.blends .blends-info .blend:nth-child(1) .blend-card .blend-front {
 	background-image: url(./images/product-img-1.png);
 	background-size: cover;
 	position: relative;
 	color: white;
 }
-.services .services-info .service:nth-child(2) .service-card .service-front {
+.blends .blends-info .blend:nth-child(2) .blend-card .blend-front {
 	background-image: url(./images/product-img-2.png);
 	background-size: cover;
 	position: relative;
 	color: white;
 }
 
-.services .services-info .service:nth-child(3) .service-card .service-front {
+.blends .blends-info .blend:nth-child(3) .blend-card .blend-front {
 	background-image: url(./images/product-img-3.jpg);
 	background-size: cover;
 	position: relative;
 	color: white;
 }
-.services .services-info .service:nth-child(2) .service-card .service-front::after {
+.blends .blends-info .blend:nth-child(2) .blend-card .blend-front::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -360,19 +365,19 @@ html {
 	background-color: rgba(0, 0, 0, 0.274);
 	z-index: -1;
 }
-.services .services-info .service:nth-child(2) .service-card .service-front i {
+.blends .blends-info .blend:nth-child(2) .blend-card .blend-front i {
 	color: white;
 }
-/* End Services section  */
+/* products section close  */
 
-/* Footer section  */
+/* footer open  */
 .footer {
 	min-height: 20vh;
 	width: 100%;
+    text-align: left;
 	background-color: #B2E079;
 	color: white;
 	flex-direction: column;
-	text-align: center;
 	padding: 5rem;
 }
 .footer .footer-contact {
@@ -385,19 +390,16 @@ html {
 	margin-bottom: 10px;
 }
 .footer .footer-contact .footer-contact-info {
-	font-size: 1.4rem;
+	font-size: 1.7rem;
 	padding-top: 10px;
+    text-align: left;
 	letter-spacing: .2rem;
+    color: whitesmoke;
 }
-.footer .footer-social-follow .footer-social-icon a {
-	color: white;
-	font-size: 3rem;
-	margin: .4rem;
-	display: inline-block;
-}
-/* End Footer section  */
 
-/* Media query for desktop and tab  */
+/* footer close  */
+
+/* media query desktop and tab open  */
 @media only screen and (min-width: 768px) {
 	.nav-bar .nav-list .hamburger {
 		display: none;
@@ -444,22 +446,22 @@ html {
 		text-align: left;
 		padding-right: 17rem;
 	}
-	.services .services-header .services-header-desc {
+	.blends .blends-header .blends-header-desc {
 		max-width: 500px;
 		padding-top: 20px;
 		margin: 0 auto;
 	}
-	.services .services-info {
+	.blends .blends-info {
 		flex-direction: row;
 		width: 80%;
 	}
-	.services .services-info .service {
+	.blends .blends-info .blend {
 		margin: 0;
 	}
 }
-/* End Media query for desktop and tab  */
+/* media query desktop and tab close  */
 
-/* Media Query For Desktop Only  */
+/* media query desktop only open  */
 @media only screen and (min-width: 1200px) {
 	.hero .hero-info .hero-info-heading {
 		font-size: 6rem;
@@ -468,4 +470,4 @@ html {
 		letter-spacing: .8rem;
 	}
 }
-/* End Media Query For Desktop Only  */
+/* media query desktop only close  */

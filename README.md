@@ -6,4 +6,4 @@
 
 
 
-### Credits: [Shaif Arfan - HTML-CSS-Mini-Project-portfolio](https://github.com/ShaifArfan/HTML-CSS-Mini-Project-portfolio)
+### Resources: [Responsive Website with HTML and CSS](https://www.youtube.com/watch?v=7ylX8R0RENo)
