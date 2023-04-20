@@ -322,7 +322,16 @@ html {
 .blends .blends-info .blend:hover .blend-card {
 	transform: rotateY(180deg);
 }
-
+.blends .blends-info .blend .blend-card .blend-front i {
+	font-size: 4rem;
+	color: white;
+	margin-bottom: 10px;
+}
+.blends .blends-info .blend .blend-card .blend-front .blend-front-heading,
+.blends .blends-info .blend .blend-card .blend-back .blend-back-heading {
+    font-size: 3rem;
+	text-transform: capitalize;
+}
 .blends .blends-info .blend .blend-card.flip {
     transform: rotateY(180deg);
 }
@@ -361,6 +370,7 @@ html {
 	top: 0;
 	height: 100%;
 	width: 100%;
+    color: rgb(35, 35, 35);
 	background-color: white;
 	z-index: -1;
 }
