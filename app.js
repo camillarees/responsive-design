@@ -7,11 +7,16 @@ hamburger_icon.addEventListener('click', () => {
 	hamburger_icon.classList.toggle('active');
 });
 
-function flipCard(card) {
-    const blendCard = card.parentNode; // Get the parent blend-card element
-    if (blendCard.classList.contains('flipped')) {
-      blendCard.classList.remove('flipped'); // Remove 'flipped' class to flip back
-    } else if (card.classList.contains('blend-back')) {
-        blendCard.classList.add('flipped'); // Add 'flipped' class to flip
-      }
-    }
+// Add swipe functionality using Hammer.js or any other library
+// Example using Hammer.js:
+const slider = document.querySelector('.image-slider');
+const sliderContainer = document.querySelector('.image-slider-container');
+const hammertime = new Hammer(slider);
+
+hammertime.on('swipeleft', function() {
+  slider.scrollLeft += slider.offsetWidth;
+});
+
+hammertime.on('swiperight', function() {
+  slider.scrollLeft -= slider.offsetWidth;
+});
