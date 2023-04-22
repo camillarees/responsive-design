@@ -1,4 +1,4 @@
-import Hammer from 'hammerjs';
+// import Hammer from 'hammerjs';
 
 const hamburger_icon = document.querySelector('#nav-bar .nav-bar .nav-list .hamburger');
 const nav_list = document.querySelector('#nav-bar .nav-bar .nav-list');
@@ -8,8 +8,6 @@ hamburger_icon.addEventListener('click', () => {
 	hamburger_icon.classList.toggle('active');
 });
 
-// Add swipe functionality using Hammer.js or any other library
-// Example using Hammer.js:
 const slider = document.querySelector('.blends-info-slider');
 const sliderContainer = document.querySelector('.blends-info');
 const hammertime = new Hammer(slider);
