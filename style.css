@@ -230,7 +230,6 @@ html {
 .about .about-img .about-img-wrapper {
 	margin-top: 5rem;
 	height: auto;
-    right: -5rem;
 	max-width: 300px;
 	position: relative;
 	display: inline-block;
@@ -257,6 +256,7 @@ html {
 	flex-direction: column;
 	min-height: 70vh;
     margin-top: 3rem;
+    overflow: hidden;
 }
 .blends .blends-header {
 	width: 80%;
@@ -274,17 +274,17 @@ html {
 	line-height: 2rem;
 	margin-top: 10px;
 }
-
 .blends .blends-info {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
 	width: 100%;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 	flex-direction: column;
     overflow-x: auto;
     overflow-y: auto;
     scroll-snap-type: x mandatory;
+    gap: 1rem; 
 }
 .blends .blends-info  .blends-info-slider {
     display: flex;
@@ -314,30 +314,25 @@ html {
 	transform-style: preserve-3d;
 	transition: .3s ease transform;
 }
-.blends .blends-info  .blends-info-slider .blend .blend-card.blend-card-active {
-    transform: scale(1.5);
+.blends .blends-info  .blends-info-slider .blend .blend-card.scaled {
+    transform: scale(1.1);
     z-index: 1;
   }
-  .blends .blends-info .blends-info-slider .blend .blend-card:not(blend-card-active) {
-    transform: scale(0.9); /* decrease the size of other cards */
+.blends .blends-info .blends-info-slider .blend .blend-card:not(blend-card-active) {
+    transform: scale(0.87); 
   }
-  .blends .blends-info .blends-info-slider .blend .blend-card {
-    transition: transform 0.3s ease-in-out;
-  }
-  .blends .blends-info .blends-info-slider .blend .blend-card:hover {
-    transform: scale(1);
-    opacity: 1;
+.blends .blends-info .blends-info-slider .blend .blend-card:hover {
+    transform: scale(1.1);
   }
 .blends .blends-info .blends-info-slider .blend .blend-card .blend-front {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	height: 70%;
+	height: 100%;
 	width: 100%;
     max-width: 200px;
-    min-width: 200px;
-    max-height: 400px;
-	backface-visibility: hidden;
+    max-height: 250px;
+    margin-top: 35px;
 	display: flex;
 	flex-direction: column;
 	align-items: left;
@@ -345,14 +340,11 @@ html {
     object-fit: cover;
     object-position: center center;
 }
-.blends .blends-info .blends-info-slider .blend .blend-card .blend-front i {
-	font-size: 4rem;
-	color: white;
-	margin-bottom: 10px;
+.blends .blends-info .blends-info-slider .blend .blend-card .blend-front-info {
+    margin: .5rem;
 }
-.blends .blends-info .blends-info-slider .blend .blend-card .blend-front .blend-front-heading {
-    position: absolute;
-    bottom: -12%;
+.blends .blends-info .blends-info-slider .blend .blend-card .blend-front-info .blend-front-heading {
+    position: relative;
     font-size: 2.5rem;
 	text-transform: capitalize;
     text-align: left;
@@ -360,14 +352,12 @@ html {
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
-.blends .blends-info .blends-info-slider .blend .blend-card .blend-front .blend-front-desc {
-    position: absolute;
-    bottom: -27%;
+.blends .blends-info .blends-info-slider .blend .blend-card .blend-front-info .blend-front-desc {
+    position: relative;
     font-size: 1.3rem;
     line-height: 2rem;
     text-align: left;
     color: rgb(35, 35, 35);
-    list-style-type: none;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
@@ -508,6 +498,7 @@ html {
         width: 90%;
         min-width: 200px;
 	}
+}
 /* media query desktop and tab close  */
 
 /* media query desktop only open  */
