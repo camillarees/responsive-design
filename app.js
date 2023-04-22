@@ -1,4 +1,4 @@
-// import Hammer from 'hammerjs';
+import Hammer from 'hammerjs';
 
 const hamburger_icon = document.querySelector('#nav-bar .nav-bar .nav-list .hamburger');
 const nav_list = document.querySelector('#nav-bar .nav-bar .nav-list');
