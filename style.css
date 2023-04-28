@@ -191,66 +191,6 @@ html {
 }
 /* hero section close */
 
-/* about open  */
-.about {
-	width: 100%;
-	min-height: 50vh;
-	padding: 5rem 5rem;
-	flex-direction: column;
-}
-.about .about-info {
-	text-align: left;
-}
-.about .about-info .about-info-heading {
-	font-size: 4rem;
-	text-transform: uppercase;
-	letter-spacing: .3rem;
-    color: rgb(35, 35, 35);
-}
-.about .about-info .about-info-desc {
-	font-size: 1.3rem;
-	line-height: 2rem;
-	margin-top: 10px;
-}
-.about .about-info .about-info-button {
-	padding: 1.6rem 2.6rem;
-	display: inline-block;
-	background-color: #B2E079;
-	color: white;
-	text-decoration: none;
-	font-size: 1.6rem;
-	text-transform: uppercase;
-	letter-spacing: .2rem;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-.about .about-img {
-	display: block;
-}
-.about .about-img .about-img-wrapper {
-	margin-top: 5rem;
-	height: auto;
-	max-width: 300px;
-	position: relative;
-	display: inline-block;
-}
-.about .about-img .about-img-wrapper img {
-	height: 100%;
-	width: 100%;
-}
-.about .about-img .about-img-wrapper::after {
-	position: absolute;
-	content: '';
-	right: -6rem;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 70%;
-	height: 120%;
-	background-color: rgba(34, 33, 33, 0.158);
-	z-index: -1;
-}
-/* about close  */
-
 /* products section open  */
 .blends {
 	flex-direction: column;
@@ -400,6 +340,66 @@ html {
 	color: white;
 }
 /* products section close  */
+
+/* about open  */
+.about {
+	width: 100%;
+	min-height: 50vh;
+	padding: 5rem 5rem;
+	flex-direction: column;
+}
+.about .about-info {
+	text-align: left;
+}
+.about .about-info .about-info-heading {
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+    color: rgb(35, 35, 35);
+}
+.about .about-info .about-info-desc {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	margin-top: 10px;
+}
+.about .about-info .about-info-button {
+	padding: 1.6rem 2.6rem;
+	display: inline-block;
+	background-color: #B2E079;
+	color: white;
+	text-decoration: none;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.about .about-img {
+	display: block;
+}
+.about .about-img .about-img-wrapper {
+	margin-top: 5rem;
+	height: auto;
+	max-width: 300px;
+	position: relative;
+	display: inline-block;
+}
+.about .about-img .about-img-wrapper img {
+	height: 100%;
+	width: 100%;
+}
+.about .about-img .about-img-wrapper::after {
+	position: absolute;
+	content: '';
+	right: -6rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 70%;
+	height: 120%;
+	background-color: rgba(34, 33, 33, 0.158);
+	z-index: -1;
+}
+/* about close  */
 
 /* footer open  */
 .footer {
